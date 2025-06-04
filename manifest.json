@@ -1,13 +1,13 @@
 // {
 //   "name": "v_jstools",
 //   "version": "1.0.0",
-//   "description": "v_jstools js hook工具",
+//   "description": "v_jstools js hook 工具",
 //   "permissions": [
-//     "unlimitedStorage", 
-//     "activeTab", 
-//     "tabs", 
-//     "debugger", 
-//     "storage", 
+//     "unlimitedStorage",
+//     "activeTab",
+//     "tabs",
+//     "debugger",
+//     "storage",
 //     "contextMenus",
 //     "scripting"
 //   ],
@@ -36,28 +36,26 @@
 //   },
 //   "manifest_version": 3
 // }
-
-
-
 {
   "name": "v_jstools",
   "version": "0.0.0",
-  "description": "v_jstools js hook工具",
-  "permissions": ["unlimitedStorage", 
-                  "activeTab", 
-                  "webRequest",
-                  "webRequestBlocking",
-                  "tabs", 
-                  "debugger", 
-                  "storage", 
-                  "contextMenus", 
-                  "http://*/*", 
-                  "https://*/*", 
-                  "<all_urls>",
-                  "cookies", 
-                  "downloads",
-                  "proxy"
-                ],
+  "description": "v_jstools js hook 工具",
+  "permissions": [
+    "unlimitedStorage",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "debugger",
+    "storage",
+    "contextMenus",
+    "http://*/*",
+    "https://*/*",
+    "<all_urls>",
+    "cookies",
+    "downloads",
+    "proxy"
+  ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "browser_action": {
     "default_popup": "popup.html"
@@ -69,9 +67,15 @@
   "devtools_page": "devtools.html",
   "content_scripts": [
     {
-      "matches": [ "file:///*", "http://*/*", "https://*/*" ],
+      "matches": [
+        "file:///*",
+        "http://*/*",
+        "https://*/*"
+      ],
       "run_at": "document_start",
-      "js": ["inject.js"],
+      "js": [
+        "inject.js"
+      ],
       "all_frames": true
     }
   ],
